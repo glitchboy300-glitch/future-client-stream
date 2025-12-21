@@ -85,7 +85,7 @@ export function FinalCTA({
                   <Lightbulb size={24} className="text-primary-foreground" />
                 </div>
                 <h3 className="font-heading text-xl font-bold text-foreground mb-3">25 video ideas in your niche</h3>
-                <p className="text-sm text-muted-foreground mb-6">
+                <p className="text-sm text-muted-foreground mb-6">Get 25 proven video concepts, tailored for your niche
               </p>
                 <Button variant="glass" className="w-full" onClick={onOpenLeadMagnet}>
                   Get Free Ideas
