@@ -77,7 +77,9 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
 
             <div className="flex flex-col items-center">
              <Button variant="glass" size="xl" onClick={() => window.open('https://tally.so/r/RGdZzj', '_blank')}>
-              </Button>
+  Get 25 Video Ideas
+  <ArrowRight size={20} />
+</Button>
               <span className="text-xs text-muted-foreground mt-2">
                 Tell me your niche. I'll send ideas you can post this week.
               </span>
