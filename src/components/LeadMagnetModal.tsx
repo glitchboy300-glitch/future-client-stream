@@ -90,95 +90,23 @@ export function LeadMagnetModal({ isOpen, onClose }: LeadMagnetModalProps) {
                     <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mx-auto mb-6 shadow-lg shadow-primary/30">
                       <Lightbulb size={28} className="text-primary-foreground" />
                     </div>
+<h3 className="font-heading text-2xl font-bold text-foreground text-center mb-2">
+  Get 25 video ideas for your niche
+</h3>
+<p className="text-sm text-muted-foreground text-center mb-8">
+  Pick your niche. I'll send ideas designed to attract buyers
+  (not random viewers).
+</p>
 
-                    <h3 className="font-heading text-2xl font-bold text-foreground text-center mb-2">
-                      Get 25 video ideas for your niche
-                    </h3>
-                    <p className="text-sm text-muted-foreground text-center mb-8">
-                      Pick your niche. I'll send ideas designed to attract buyers
-                      (not random viewers).
-                    </p>
-
-                    <form onSubmit={handleSubmit} className="space-y-4">
-                      <div>
-                        <label className="text-sm text-muted-foreground mb-2 block">
-                          Your niche
-                        </label>
-                        <Select value={niche} onValueChange={setNiche}>
-                          <SelectTrigger className="w-full bg-white/5 border-white/10 text-foreground">
-                            <SelectValue placeholder="Select your niche" />
-                          </SelectTrigger>
-                          <SelectContent className="bg-card border-white/10">
-                            {niches.map((n) => (
-                              <SelectItem
-                                key={n}
-                                value={n}
-                                className="text-foreground hover:bg-white/10 focus:bg-white/10"
-                              >
-                                {n}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                      </div>
-
-                      <div>
-                        <label className="text-sm text-muted-foreground mb-2 block">
-                          Email
-                        </label>
-                        <Input
-                          type="email"
-                          placeholder="you@example.com"
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
-                          className="bg-white/5 border-white/10 text-foreground placeholder:text-muted-foreground"
-                          required
-                        />
-                      </div>
-
-                      <Button
-                        type="submit"
-                        variant="hero"
-                        className="w-full"
-                        disabled={!niche || !email}
-                      >
-                        Send My Ideas
-                        <ArrowRight size={18} />
-                      </Button>
-                    </form>
+<Button
+  variant="hero"
+  className="w-full"
+  onClick={() => window.open('https://tally.so/r/RGdZzj', '_blank')}
+>
+  Get My Ideas
+  <ArrowRight size={18} />
+</Button>
                   </motion.div>
-                ) : (
-                  <motion.div
-                    key="step2"
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -20 }}
-                    className="text-center"
-                  >
-                    {/* Success Icon */}
-                    <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center mx-auto mb-6 shadow-lg shadow-primary/30">
-                      <Check size={28} className="text-primary-foreground" />
-                    </div>
-
-                    <h3 className="font-heading text-2xl font-bold text-foreground mb-2">
-                      Sent!
-                    </h3>
-                    <p className="text-muted-foreground mb-8">
-                      Want help turning these into clients?
-                    </p>
-
-                    <Button variant="hero" className="w-full" asChild>
-                      <a
-                        href="https://calendly.com/muawaz-genspeak/30min"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Book a Call
-                        <ArrowRight size={18} />
-                      </a>
-                    </Button>
-                  </motion.div>
-                )}
               </AnimatePresence>
             </div>
           </motion.div>
