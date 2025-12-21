@@ -55,7 +55,7 @@ export function LeadMagnetModal({ isOpen, onClose }: LeadMagnetModalProps) {
               <Button
                 variant="hero"
                 className="w-full"
-                onClick={() => window.open('https://tally.so/r/RGdZzj', '_blank')}
+                data-tally-open="RGdZzj"
               >
                 Get My Ideas
                 <ArrowRight size={18} />
