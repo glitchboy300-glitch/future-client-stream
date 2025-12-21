@@ -87,7 +87,7 @@ export function FinalCTA({
                 <h3 className="font-heading text-xl font-bold text-foreground mb-3">25 video ideas in your niche</h3>
                 <p className="text-sm text-muted-foreground mb-6">Get 25 proven video concepts, tailored for your niche
               </p>
-                <Button variant="glass" className="w-full" onClick={onOpenLeadMagnet}>
+                <Button variant="glass" className="w-full" onClick={() => window.open('https://tally.so/r/RGdZzj', '_blank')}>
                   Get Free Ideas
                   <ArrowRight size={18} />
                 </Button>
