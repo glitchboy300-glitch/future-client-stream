@@ -13,9 +13,9 @@ export function Guarantee({ onOpenLeadMagnet }: GuaranteeProps) {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const clarifiers = [
-    "You show up and film from the scripts we provide.",
-    "We handle the system end-to-end.",
-    "If you don't win in 90 days, we keep working at no cost.",
+    "You show up and film; we handle the rest.",
+    "We build and manage your entire content-to-call pipeline.",
+    "If you don't see 20 new qualified calls on your calendar, we work for free until you do.",
   ];
 
   return (
@@ -47,9 +47,9 @@ export function Guarantee({ onOpenLeadMagnet }: GuaranteeProps) {
               </div>
 
               <p className="font-heading text-xl md:text-2xl lg:text-3xl font-bold text-center text-foreground mb-8">
-                Sign new clients from YouTube in 90 days —{" "}
+                We guarantee to ADD 20 qualified sales calls per month using YouTube as your authority channel —{" "}
                 <span className="text-gradient">
-                  or we work for free until you do.
+                  or we refund everything and work for free until you do.
                 </span>
               </p>
 
