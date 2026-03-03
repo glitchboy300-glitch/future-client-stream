@@ -27,7 +27,7 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
           >
             <Play size={14} className="text-primary" />
             <span className="text-sm text-muted-foreground">
-              Done-for-you YouTube acquisition for service businesses
+              Done-for-you YouTube authority system for agencies & B2B businesses
             </span>
           </motion.div>
 
@@ -38,10 +38,10 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
           >
-            Sign new clients from{" "}
-            <span className="text-gradient glow-text">YouTube</span>
+            Add 20+ qualified sales calls{" "}
+            <span className="text-gradient glow-text">every month</span>
             <br />
-            in 90 days.
+            with a done-for-you YouTube system.
           </motion.h1>
 
           {/* Subheadline */}
@@ -51,9 +51,9 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8"
           >
-            <span className="text-foreground font-medium">You film. We do everything else.</span>
+            <span className="text-foreground font-medium">You film for 2 hours a month. We do everything else.</span>
             <br />
-            Strategy, scripts, editing, thumbnails, SEO, publishing, lead capture, tracking.
+            YouTube videos, short-form content, LinkedIn posts, lead magnets, and email funnels — all done for you.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -95,8 +95,8 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
           >
             {[
               { icon: Check, text: "Done-for-you system" },
-              { icon: Users, text: "Built for service businesses" },
-              { icon: Phone, text: "Work free until you win" },
+              { icon: Users, text: "Built for agencies & B2B service businesses" },
+              { icon: Phone, text: "20 qualified calls/month — guaranteed" },
             ].map((item, index) => (
               <div
                 key={index}
