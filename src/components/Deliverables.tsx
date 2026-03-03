@@ -10,6 +10,10 @@ import {
   FileText,
   BarChart2,
   FileSpreadsheet,
+  Smartphone,
+  Mail,
+  PenSquare,
+  Gift,
 } from "lucide-react";
 
 export function Deliverables() {
@@ -19,18 +23,33 @@ export function Deliverables() {
   const deliverables = [
     {
       icon: Youtube,
-      title: "YouTube Channel Setup & Branding",
-      tag: "one-time",
+      title: "Authority YouTube Content",
+      tag: "scripted, edited, SEO optimized",
     },
     {
-      icon: CalendarDays,
-      title: "Channel Content Strategy",
-      tag: "roadmap + calendar",
+      icon: Smartphone,
+      title: "Short-Form Video Content",
+      tag: "TikTok, Instagram & YouTube Shorts",
     },
     {
-      icon: Video,
-      title: "Weekly Educational Videos",
-      tag: "edited, packaged, posted",
+      icon: PenSquare,
+      title: "LinkedIn & X Written Posts",
+      tag: "repurposed from your video content",
+    },
+    {
+      icon: Gift,
+      title: "Lead Magnets",
+      tag: "researched, written & designed",
+    },
+    {
+      icon: FileText,
+      title: "Opt-In Pages",
+      tag: "built to convert viewers into leads",
+    },
+    {
+      icon: Mail,
+      title: "Email Funnel Automation",
+      tag: "nurture sequences that book calls",
     },
     {
       icon: Image,
@@ -43,14 +62,19 @@ export function Deliverables() {
       tag: "title, description, tags, playlists",
     },
     {
-      icon: FileText,
-      title: "Lead Capture Page + Form",
-      tag: "one-time",
+      icon: CalendarDays,
+      title: "Competitor Research & Strategy",
+      tag: "ongoing content strategy",
     },
     {
       icon: BarChart2,
       title: "Lead Tracking Dashboard",
       tag: "ongoing",
+    },
+    {
+      icon: Youtube,
+      title: "YouTube Funnel Buildout",
+      tag: "channel setup & branding",
     },
     {
       icon: FileSpreadsheet,
@@ -67,10 +91,18 @@ export function Deliverables() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16"
+            className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4"
           >
             What you <span className="text-gradient">get</span>
           </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-center text-muted-foreground mb-16 max-w-xl mx-auto"
+          >
+            You're not buying videos. You're buying a complete, done-for-you client acquisition system.
+          </motion.p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {deliverables.map((item, index) => (
