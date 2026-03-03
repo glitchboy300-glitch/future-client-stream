@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Target, Video, BarChart3 } from "lucide-react";
+import { Target, Video, BarChart3, Globe2 } from "lucide-react";
 
 export function OfferStack() {
   const ref = useRef(null);
@@ -10,18 +10,18 @@ export function OfferStack() {
   const offers = [
     {
       icon: Target,
-      title: "Positioning + Content Strategy",
-      description: "We pick topics that attract buyers, not browsers.",
+      title: "Authority YouTube Channel",
+      description: "We build your YouTube channel into an authority platform that attracts your ideal clients and pre-sells them on working with you before they ever get on a call.",
     },
     {
-      icon: Video,
-      title: "Weekly Video Production (You Film)",
-      description: "We write the script and structure. You record. We edit, package, and publish.",
+      icon: Globe2,
+      title: "Multi-Platform Content System",
+      description: "We turn your YouTube videos into a full content system — short-form videos for TikTok, Instagram, and YouTube Shorts, plus written posts for LinkedIn & X to maximize your reach.",
     },
     {
       icon: BarChart3,
-      title: "Lead Capture + Tracking",
-      description: "Every video points to an offer. We track clicks, leads, and booked calls.",
+      title: "Automated Client Pipeline",
+      description: "We convert your audience into qualified sales calls with custom lead magnets, opt-in pages, and automated email sequences that nurture leads and book appointments on autopilot.",
     },
   ];
 
@@ -73,7 +73,7 @@ export function OfferStack() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-center text-sm text-muted-foreground mt-8"
           >
-            If you don't sign new clients in 90 days,{" "}
+            If you don't see 20 qualified sales calls on your calendar,{" "}
             <span className="text-primary font-medium">we work for free until you do.</span>
           </motion.p>
         </div>
