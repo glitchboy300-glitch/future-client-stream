@@ -1,12 +1,38 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight, Check, Play, TrendingUp, Users, Phone } from "lucide-react";
+import { ArrowRight, Check, Play, Users, Phone } from "lucide-react";
+import { useEffect } from "react";
 
 interface HeroProps {
   onOpenLeadMagnet: () => void;
 }
 
 export function Hero({ onOpenLeadMagnet }: HeroProps) {
+  useEffect(() => {
+    // Inject Wistia player scripts if not already present
+    if (!document.querySelector('script[src="https://fast.wistia.com/player.js"]')) {
+      const playerScript = document.createElement("script");
+      playerScript.src = "https://fast.wistia.com/player.js";
+      playerScript.async = true;
+      document.head.appendChild(playerScript);
+    }
+
+    if (!document.querySelector('script[src="https://fast.wistia.com/embed/m9gt6j55n2.js"]')) {
+      const embedScript = document.createElement("script");
+      embedScript.src = "https://fast.wistia.com/embed/m9gt6j55n2.js";
+      embedScript.async = true;
+      embedScript.type = "module";
+      document.head.appendChild(embedScript);
+    }
+
+    if (!document.querySelector("style[data-wistia-m9gt6j55n2]")) {
+      const style = document.createElement("style");
+      style.setAttribute("data-wistia-m9gt6j55n2", "true");
+      style.textContent = `wistia-player[media-id='m9gt6j55n2']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/m9gt6j55n2/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }`;
+      document.head.appendChild(style);
+    }
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 pb-16 overflow-hidden">
       {/* Animated background elements */}
@@ -109,81 +135,22 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
           </motion.div>
         </div>
 
-        {/* Dashboard Mockup */}
+        {/* VSL — Wistia Video */}
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
           className="mt-16 max-w-3xl mx-auto"
         >
-          <div className="glass-card p-6 md:p-8">
-            <div className="flex items-center justify-between mb-6">
-              <h3 className="font-heading text-lg font-semibold text-foreground">
-                Client Acquisition Pipeline
-              </h3>
-              <span className="text-xs px-3 py-1 rounded-full bg-primary/20 text-primary">
-                Live Dashboard
-              </span>
-            </div>
-
-            {/* Pipeline Steps */}
-            <div className="grid grid-cols-4 gap-2 md:gap-4 mb-6">
-              {[
-                { label: "Views", value: "24.5K", trend: "+18%" },
-                { label: "Leads", value: "847", trend: "+24%" },
-                { label: "Calls", value: "156", trend: "+31%" },
-                { label: "Clients", value: "23", trend: "+42%" },
-              ].map((step, index) => (
-                <div
-                  key={index}
-                  className="relative p-3 md:p-4 rounded-lg bg-white/5 border border-white/10"
-                >
-                  <p className="text-xs text-muted-foreground mb-1">{step.label}</p>
-                  <p className="font-heading text-lg md:text-2xl font-bold text-foreground">
-                    {step.value}
-                  </p>
-                  <span className="text-xs text-primary">{step.trend}</span>
-                  {index < 3 && (
-                    <ArrowRight
-                      size={16}
-                      className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 text-primary/50 hidden md:block"
-                    />
-                  )}
-                </div>
-              ))}
-            </div>
-
-            {/* Animated Line Graph Placeholder */}
-            <div className="h-24 relative">
-              <svg className="w-full h-full" viewBox="0 0 400 80" preserveAspectRatio="none">
-                <defs>
-                  <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="hsl(189 100% 70%)" />
-                    <stop offset="100%" stopColor="hsl(263 86% 76%)" />
-                  </linearGradient>
-                  <linearGradient id="areaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="hsl(189 100% 70% / 0.3)" />
-                    <stop offset="100%" stopColor="hsl(189 100% 70% / 0)" />
-                  </linearGradient>
-                </defs>
-                <path
-                  d="M0,60 C50,55 80,50 120,40 C160,30 200,35 240,25 C280,15 320,20 360,10 L400,5"
-                  fill="none"
-                  stroke="url(#lineGradient)"
-                  strokeWidth="2"
-                  className="animate-fade-in"
-                />
-                <path
-                  d="M0,60 C50,55 80,50 120,40 C160,30 200,35 240,25 C280,15 320,20 360,10 L400,5 L400,80 L0,80 Z"
-                  fill="url(#areaGradient)"
-                  className="animate-fade-in"
-                />
-              </svg>
-              <div className="absolute bottom-0 left-0 right-0 flex justify-between text-xs text-muted-foreground">
-                <span>Week 1</span>
-                <span>Week 12</span>
-              </div>
-            </div>
+          <div
+            className="rounded-2xl overflow-hidden"
+            style={{
+              boxShadow: "0 0 40px hsl(189 100% 70% / 0.15), 0 0 80px hsl(263 86% 76% / 0.1)",
+              border: "1px solid hsl(0 0% 100% / 0.1)",
+            }}
+          >
+            {/* @ts-ignore */}
+            <wistia-player media-id="m9gt6j55n2" aspect="1.7777777777777777"></wistia-player>
           </div>
         </motion.div>
       </div>
