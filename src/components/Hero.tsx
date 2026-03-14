@@ -9,7 +9,6 @@ interface HeroProps {
 
 export function Hero({ onOpenLeadMagnet }: HeroProps) {
   useEffect(() => {
-    // Inject Wistia player scripts if not already present
     if (!document.querySelector('script[src="https://fast.wistia.com/player.js"]')) {
       const playerScript = document.createElement("script");
       playerScript.src = "https://fast.wistia.com/player.js";
@@ -75,18 +74,37 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8"
+            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
           >
             <span className="text-foreground font-medium">You film for 2 hours a month. We do everything else.</span>
             <br />
             YouTube videos, short-form content, LinkedIn posts, lead magnets, and email funnels — all done for you.
           </motion.p>
 
+          {/* VSL — above CTA buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="mb-10 max-w-3xl mx-auto"
+          >
+            <div
+              className="rounded-2xl overflow-hidden"
+              style={{
+                boxShadow: "0 0 40px hsl(189 100% 70% / 0.15), 0 0 80px hsl(263 86% 76% / 0.1)",
+                border: "1px solid hsl(0 0% 100% / 0.1)",
+              }}
+            >
+              {/* @ts-ignore */}
+              <wistia-player media-id="m9gt6j55n2" aspect="1.7777777777777777"></wistia-player>
+            </div>
+          </motion.div>
+
           {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6"
           >
             <div className="flex flex-col items-center">
@@ -102,10 +120,10 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
             </div>
 
             <div className="flex flex-col items-center">
-             <Button variant="glass" size="xl" data-tally-open="RGdZzj">
-  Get 25 Video Ideas
-  <ArrowRight size={20} />
-</Button>
+              <Button variant="glass" size="xl" data-tally-open="RGdZzj">
+                Get 25 Video Ideas
+                <ArrowRight size={20} />
+              </Button>
               <span className="text-xs text-muted-foreground mt-2">
                 Tell me your niche. I'll send ideas you can post this week.
               </span>
@@ -116,7 +134,7 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
             className="flex flex-wrap items-center justify-center gap-6 mt-12"
           >
             {[
@@ -134,25 +152,6 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
             ))}
           </motion.div>
         </div>
-
-        {/* VSL — Wistia Video */}
-        <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-16 max-w-3xl mx-auto"
-        >
-          <div
-            className="rounded-2xl overflow-hidden"
-            style={{
-              boxShadow: "0 0 40px hsl(189 100% 70% / 0.15), 0 0 80px hsl(263 86% 76% / 0.1)",
-              border: "1px solid hsl(0 0% 100% / 0.1)",
-            }}
-          >
-            {/* @ts-ignore */}
-            <wistia-player media-id="m9gt6j55n2" aspect="1.7777777777777777"></wistia-player>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
