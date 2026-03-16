@@ -105,29 +105,17 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6"
+            className="flex flex-col items-center justify-center mb-6"
           >
-            <div className="flex flex-col items-center">
-              <Button variant="hero" size="xl" asChild>
-                <a href="https://form.typeform.com/to/nmg1JhSk" target="_blank" rel="noopener noreferrer">
-                  Book a Call
-                  <ArrowRight size={20} />
-                </a>
-              </Button>
-              <span className="text-xs text-muted-foreground mt-2">
-                15 minutes. If it's not a fit, I'll tell you.
-              </span>
-            </div>
-
-            <div className="flex flex-col items-center">
-              <Button variant="glass" size="xl" data-tally-open="RGdZzj">
-                Get 25 Video Ideas
+            <Button variant="hero" size="xl" asChild>
+              <a href="https://form.typeform.com/to/nmg1JhSk" target="_blank" rel="noopener noreferrer">
+                Book a Call
                 <ArrowRight size={20} />
-              </Button>
-              <span className="text-xs text-muted-foreground mt-2">
-                Tell me your niche. I'll send ideas you can post this week.
-              </span>
-            </div>
+              </a>
+            </Button>
+            <span className="text-xs text-muted-foreground mt-2">
+              15 minutes. If it's not a fit, I'll tell you.
+            </span>
           </motion.div>
 
           {/* Mini Proof Points */}
