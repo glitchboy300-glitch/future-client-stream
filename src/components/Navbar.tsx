@@ -58,13 +58,6 @@ export function Navbar({ onOpenLeadMagnet }: NavbarProps) {
           {/* Desktop CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
             <Button
-              variant="glass"
-              size="sm"
-              onClick={onOpenLeadMagnet}
-            >
-              Get 25 Ideas
-            </Button>
-            <Button
               variant="neon"
               size="sm"
               asChild
@@ -106,9 +99,6 @@ export function Navbar({ onOpenLeadMagnet }: NavbarProps) {
                 </a>
               ))}
               <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
-                <Button variant="glass" onClick={() => { onOpenLeadMagnet(); setIsMobileMenuOpen(false); }}>
-                  Get 25 Ideas
-                </Button>
                 <Button variant="neon" asChild>
                   <a href="https://form.typeform.com/to/nmg1JhSk" target="_blank" rel="noopener noreferrer">
                     Book a Call
