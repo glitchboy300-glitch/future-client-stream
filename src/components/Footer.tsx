@@ -12,7 +12,7 @@ export function Footer() {
             <span>© GenSpeak</span>
             <span>•</span>
             <a
-              href="https://calendly.com/muawaz-genspeak/30min"
+              href="https://form.typeform.com/to/nmg1JhSk"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 transition-colors"
