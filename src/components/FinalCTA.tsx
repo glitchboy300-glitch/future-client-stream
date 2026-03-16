@@ -60,7 +60,7 @@ export function FinalCTA({
                   Walk away with a custom 90-day content plan.
                 </p>
                 <Button variant="hero" className="w-full" asChild>
-                  <a href="https://calendly.com/muawaz-genspeak/30min" target="_blank" rel="noopener noreferrer">
+                  <a href="https://form.typeform.com/to/nmg1JhSk" target="_blank" rel="noopener noreferrer">
                     Book a Call
                     <ArrowRight size={18} />
                   </a>
