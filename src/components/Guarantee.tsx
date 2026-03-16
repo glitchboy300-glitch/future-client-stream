@@ -87,9 +87,7 @@ export function Guarantee({ onOpenLeadMagnet }: GuaranteeProps) {
                 <ArrowRight size={18} />
               </a>
             </Button>
-            <Button variant="glass" size="lg" onClick={onOpenLeadMagnet}>
-              Get 25 Video Ideas
-            </Button>
+
           </motion.div>
         </div>
       </div>
