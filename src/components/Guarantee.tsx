@@ -79,7 +79,7 @@ export function Guarantee({ onOpenLeadMagnet }: GuaranteeProps) {
           >
             <Button variant="neon" size="lg" asChild>
               <a
-                href="https://calendly.com/muawaz-genspeak/30min"
+                href="https://form.typeform.com/to/nmg1JhSk"
                 target="_blank"
                 rel="noopener noreferrer"
               >
