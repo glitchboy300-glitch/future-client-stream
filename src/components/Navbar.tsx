@@ -69,7 +69,7 @@ export function Navbar({ onOpenLeadMagnet }: NavbarProps) {
               size="sm"
               asChild
             >
-              <a href="https://calendly.com/muawaz-genspeak/30min" target="_blank" rel="noopener noreferrer">
+              <a href="https://form.typeform.com/to/nmg1JhSk" target="_blank" rel="noopener noreferrer">
                 Book a Call
               </a>
             </Button>
@@ -110,7 +110,7 @@ export function Navbar({ onOpenLeadMagnet }: NavbarProps) {
                   Get 25 Ideas
                 </Button>
                 <Button variant="neon" asChild>
-                  <a href="https://calendly.com/muawaz-genspeak/30min" target="_blank" rel="noopener noreferrer">
+                  <a href="https://form.typeform.com/to/nmg1JhSk" target="_blank" rel="noopener noreferrer">
                     Book a Call
                   </a>
                 </Button>
