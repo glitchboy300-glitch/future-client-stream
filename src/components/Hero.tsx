@@ -109,7 +109,7 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
           >
             <div className="flex flex-col items-center">
               <Button variant="hero" size="xl" asChild>
-                <a href="https://calendly.com/muawaz-genspeak/30min" target="_blank" rel="noopener noreferrer">
+                <a href="https://form.typeform.com/to/nmg1JhSk" target="_blank" rel="noopener noreferrer">
                   Book a Call
                   <ArrowRight size={20} />
                 </a>
