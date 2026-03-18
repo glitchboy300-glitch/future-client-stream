@@ -1,4 +1,0 @@
-/tools/*  https://genspeak-tools-web.vercel.app/tools/:splat  200
-/sign-in  https://genspeak-tools-web.vercel.app/sign-in  200
-/api/auth/*  https://genspeak-tools-web.vercel.app/api/auth/:splat  200
-/*  /index.html  200
