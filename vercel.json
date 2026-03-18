@@ -1,0 +1,17 @@
+{
+  "rewrites": [
+    {
+      "source": "/tools/:path*",
+      "destination": "https://genspeak-tools-web.vercel.app/tools/:path*"
+    },
+    {
+      "source": "/sign-in",
+      "destination": "https://genspeak-tools-web.vercel.app/sign-in"
+    },
+    {
+      "source": "/api/auth/:path*",
+      "destination": "https://genspeak-tools-web.vercel.app/api/auth/:path*"
+    }
+  ]
+}
+
