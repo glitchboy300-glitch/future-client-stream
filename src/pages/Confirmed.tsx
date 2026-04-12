@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { CheckCircle, Play, ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import Footer from "@/components/Footer";
+import { Footer } from "@/components/Footer";
 
 /* ==========================================================
    PAGE CONFIG - Update this object to change page content
