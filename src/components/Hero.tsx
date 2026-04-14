@@ -108,7 +108,7 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
             className="flex flex-col items-center justify-center mb-6"
           >
             <Button variant="hero" size="xl" asChild>
-              <a href="https://form.typeform.com/to/nmg1JhSk" target="_blank" rel="noopener noreferrer">
+              <a href="https://tally.so/r/b58pL1" target="_blank" rel="noopener noreferrer">
                 Book a Call
                 <ArrowRight size={20} />
               </a>

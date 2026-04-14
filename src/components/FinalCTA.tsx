@@ -51,7 +51,7 @@ export function FinalCTA({ onOpenLeadMagnet }: FinalCTAProps) {
                 Walk away with a custom content plan built around your business.
               </p>
               <Button variant="hero" className="w-full" asChild>
-                <a href="https://form.typeform.com/to/nmg1JhSk" target="_blank" rel="noopener noreferrer">
+                <a href="https://tally.so/r/b58pL1" target="_blank" rel="noopener noreferrer">
                   Book a Call
                   <ArrowRight size={18} />
                 </a>

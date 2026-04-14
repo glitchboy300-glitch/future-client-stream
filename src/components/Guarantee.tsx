@@ -79,7 +79,7 @@ export function Guarantee({ onOpenLeadMagnet }: GuaranteeProps) {
           >
             <Button variant="neon" size="lg" asChild>
               <a
-                href="https://form.typeform.com/to/nmg1JhSk"
+                href="https://tally.so/r/b58pL1"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -62,7 +62,7 @@ export function Navbar({ onOpenLeadMagnet }: NavbarProps) {
               size="sm"
               asChild
             >
-              <a href="https://form.typeform.com/to/nmg1JhSk" target="_blank" rel="noopener noreferrer">
+              <a href="https://tally.so/r/b58pL1" target="_blank" rel="noopener noreferrer">
                 Book a Call
               </a>
             </Button>
@@ -100,7 +100,7 @@ export function Navbar({ onOpenLeadMagnet }: NavbarProps) {
               ))}
               <div className="flex flex-col gap-3 pt-4 border-t border-white/10">
                 <Button variant="neon" asChild>
-                  <a href="https://form.typeform.com/to/nmg1JhSk" target="_blank" rel="noopener noreferrer">
+                  <a href="https://tally.so/r/b58pL1" target="_blank" rel="noopener noreferrer">
                     Book a Call
                   </a>
                 </Button>
