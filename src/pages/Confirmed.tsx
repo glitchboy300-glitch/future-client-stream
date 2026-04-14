@@ -31,7 +31,7 @@ const PAGE_CONFIG = {
       title: "How Much Does This Cost?",
       description:
         "Transparent pricing breakdown so there are zero surprises on the call.",
-      videoId: "",
+      videoId: "ieERbAdPZOs",
     },
   },
 
@@ -151,7 +151,7 @@ export default function Confirmed() {
         ))}
 
         {/* TESTIMONIALS */}
-        {PAGE_CONFIG.testimonials.length > 0 && (
+        {false && (
           <section className="py-16 px-4">
             <div className="max-w-5xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 font-heading text-center">
@@ -173,7 +173,7 @@ export default function Confirmed() {
         )}
 
         {/* CLIENT RESULTS */}
-        {PAGE_CONFIG.clients.length > 0 && (
+        {false && (
           <section className="py-16 px-4">
             <div className="max-w-5xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 font-heading text-center">
@@ -197,6 +197,7 @@ export default function Confirmed() {
           </section>
         )}
 
+        {/* CHECK OUT OUR WORK */}<section className="py-16 px-4"><div className="max-w-5xl mx-auto"><h2 className="text-2xl md:text-3xl font-bold text-white mb-2 font-heading text-center">Check Out Our Work</h2><p className="text-white/60 mb-8 text-center">videos we ideated, scripted, edited, packaged for our clients</p><div className="grid md:grid-cols-3 gap-6"><YouTubeEmbed videoId="u6R8no74vzg" title="Client Work 1" /><YouTubeEmbed videoId="zv03UY4k5UE" title="Client Work 2" /><YouTubeEmbed videoId="S8H-22rlElg" title="Client Work 3" /></div><p className="text-white/50 text-center mt-6">Updating soon with new work</p></div></section>
         {/* CONTACT CTA */}
         <section className="py-16 px-4">
           <div className="max-w-2xl mx-auto text-center">
