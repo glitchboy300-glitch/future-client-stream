@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
    ========================================================== */
 const PAGE_CONFIG = {
   hero: {
-    headline: "Your Discovery Call Is Booked",
+    headline: "You Are Booked In!",
     subtext:
       "While you wait, watch these short videos so you know exactly what to expect on our call.",
   },
@@ -22,10 +22,10 @@ const PAGE_CONFIG = {
       videoId: "HbCqvU7bjMk",
     },
     results: {
-      title: "What Kind Of Results Can I Expect?",
+      title: "What Kind Of Results Can I Expect & When?",
       description:
         "Real numbers from real clients. No hype. Just what actually happens.",
-      videoId: "",
+      videoId: "qY3Gv-ywL90",
     },
     pricing: {
       title: "How Much Does This Cost?",
@@ -130,7 +130,7 @@ export default function Confirmed() {
               {PAGE_CONFIG.hero.headline}
             </h1>
             <p className="text-lg text-white/70">
-              {PAGE_CONFIG.hero.subtext}
+              </p><div className="mt-8 mx-auto max-w-3xl relative w-full aspect-video rounded-2xl overflow-hidden"><iframe src="https://www.youtube-nocookie.com/embed/n0fSGcJKwUQ" title="You Are Booked In" className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /></div><p style={{display:"none"}}>
             </p>
           </div>
         </section>
