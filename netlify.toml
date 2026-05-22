@@ -11,3 +11,7 @@
   to = "/index.html"
   status = 200
 
+
+[functions."cal-webhook-selftest"]
+  schedule = "0 4 * * *"
+  
