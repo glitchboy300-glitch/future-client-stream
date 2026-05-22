@@ -33,7 +33,7 @@ import crypto from "node:crypto";
      schedule = "0 4 * * *"   # 04:00 UTC = 09:00 Asia/Karachi
    ========================================================= */
 
-const SITE_URL = process.env.URL;
+const SITE_URL = process.env.URL || "https://genspeak.io";
 const SECRET = process.env.CAL_WEBHOOK_SECRET;
 const TEST_EMAIL = process.env.SELFTEST_EMAIL;
 const SLACK_URL = process.env.SLACK_ALERT_WEBHOOK_URL || "";
