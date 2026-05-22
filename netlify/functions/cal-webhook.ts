@@ -560,7 +560,13 @@ export const handler: Handler = async (event) => {
     error?: string;
   }[] = [];
 
-  for (const email of emails) {
+  for (let i = 0; i < emails.length; i++) {
+    const email = emails[i];
+    // Resend free tier is 2 req/sec. Sleep 600ms between sends
+    // (except before the first one) to stay safely under the limit.
+    if (i > 0) {
+      await new Promise((r) => setTimeout(r, 600));
+    }
     try {
       const { id } = await sendEmail(apiKey, email);
       results.push({
