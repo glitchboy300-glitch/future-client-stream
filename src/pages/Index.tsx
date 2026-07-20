@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { OurWork } from "@/components/OurWork";
 import { PainPromise } from "@/components/PainPromise";
 import { OfferStack } from "@/components/OfferStack";
 import { HowItWorks } from "@/components/HowItWorks";
@@ -38,6 +39,7 @@ const Index = () => {
 
         <main>
           <Hero onOpenLeadMagnet={() => setIsLeadMagnetOpen(true)} />
+          <OurWork />
           <PainPromise />
           <OfferStack />
           <HowItWorks />
