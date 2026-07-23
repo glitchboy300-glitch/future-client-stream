@@ -502,6 +502,12 @@ export function verifyCalSignature(
 // -------------------------------------------------------------
 
 export const handler: Handler = async (event) => {
+  // KILL SWITCH — added 2026-07-23 per Muawaz.
+  // All Resend sending disabled until domain DNS (SPF/DKIM) is fixed
+  // and deliverability recovers. Delete this block to re-enable.
+  console.log("cal-webhook disabled by kill switch; event ignored");
+  return { statusCode: 200, body: "Webhook disabled" };
+
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method not allowed" };
   }
