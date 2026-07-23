@@ -11,7 +11,8 @@
   to = "/index.html"
   status = 200
 
-
-[functions."cal-webhook-selftest"]
-  schedule = "0 4 * * *"
-  
+# Daily cal-webhook self-test cron removed 2026-07-23.
+# It sent a test email through Resend every day at 04:00 UTC and was
+# hurting deliverability. To re-enable:
+# [functions."cal-webhook-selftest"]
+#   schedule = "0 4 * * *"
