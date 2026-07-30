@@ -73,7 +73,8 @@ export function FAQs() {
                   <AccordionTrigger className="text-left font-heading font-medium text-foreground hover:text-primary transition-colors py-5 hover:no-underline">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">
+                  {/* forceMount keeps answer text in the prerendered HTML for crawlers */}
+                  <AccordionContent forceMount className="text-muted-foreground pb-5">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

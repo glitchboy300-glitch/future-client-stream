@@ -1,2 +1,3 @@
-/*    /index.html   200
-
+# Prerendered pages exist as real files in dist/ and are served directly.
+# Anything that doesn't match a real file is a genuine 404.
+/*    /404.html   404

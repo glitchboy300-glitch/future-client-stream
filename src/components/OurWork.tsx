@@ -3,12 +3,12 @@ import { useRef, useState } from "react";
 import { Play } from "lucide-react";
 
 const videos = [
-  { id: "zv03UY4k5UE" },
-  { id: "0SdJjuKroBs" },
-  { id: "u6R8no74vzg" },
-  { id: "G3ZqeGHmg7k" },
-  { id: "iUfCpDYxjjA" },
-  { id: "xWUMt3HcMY0" },
+  { id: "zv03UY4k5UE", title: "How to Generate 30 Winning Ad Angles in 1 Hour" },
+  { id: "0SdJjuKroBs", title: "13 OpenClaw Skills I Can't Live Without" },
+  { id: "u6R8no74vzg", title: "The NEW AI Second Brain That Replaces Obsidian" },
+  { id: "G3ZqeGHmg7k", title: "How a Cannabis Dispensary Generated $922K Using SEO" },
+  { id: "iUfCpDYxjjA", title: "Watch me Generate Unlimited Leads Using Claude Code" },
+  { id: "xWUMt3HcMY0", title: "My Lead Generation Strategy Is Boring, But It Booked Me 200+ Sales Calls" },
 ];
 
 export function OurWork() {
@@ -55,7 +55,7 @@ export function OurWork() {
                       <iframe
                         className="absolute inset-0 w-full h-full"
                         src={`https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&rel=0`}
-                        title="Client video"
+                        title={`${video.title} (client video produced by GenSpeak)`}
                         loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
@@ -64,12 +64,14 @@ export function OurWork() {
                       <button
                         type="button"
                         onClick={() => setActive((prev) => [...prev, video.id])}
-                        aria-label="Play video"
+                        aria-label={`Play video: ${video.title}`}
                         className="absolute inset-0 w-full h-full cursor-pointer"
                       >
                         <img
                           src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`}
-                          alt=""
+                          alt={`Thumbnail of client YouTube video produced by GenSpeak: ${video.title}`}
+                          width={480}
+                          height={360}
                           loading="lazy"
                           className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                         />
