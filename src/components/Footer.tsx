@@ -12,6 +12,13 @@ export function Footer() {
             <span>© GenSpeak</span>
             <span>•</span>
             <a
+              href="/blog/"
+              className="hover:text-foreground transition-colors"
+            >
+              Guides
+            </a>
+            <span>•</span>
+            <a
               href="/privacy"
               className="hover:text-foreground transition-colors"
             >
