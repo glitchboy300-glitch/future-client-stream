@@ -65,7 +65,7 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
           >
             <span className="text-foreground font-medium">You film for 2 hours a month. We do everything else.</span>
             <br />
-            YouTube videos, short-form content, LinkedIn posts, lead magnets, and email funnels — all done for you.
+            YouTube videos, short-form content, LinkedIn posts, lead magnets, and email funnels, all done for you.
           </motion.p>
 
           {/* VSL — above CTA buttons */}
