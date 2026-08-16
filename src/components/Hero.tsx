@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight, Check, Play, Users, Phone } from "lucide-react";
+import { ArrowRight, Check, Users, Phone } from "lucide-react";
 import { useEffect } from "react";
 
 interface HeroProps {
@@ -43,19 +43,6 @@ export function Hero({ onOpenLeadMagnet }: HeroProps) {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-8"
-          >
-            <Play size={14} className="text-primary" />
-            <span className="text-sm text-muted-foreground">
-              Done-for-you YouTube authority system for agencies & B2B businesses
-            </span>
-          </motion.div>
-
           {/* Main Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
